@@ -1,4 +1,4 @@
-const Fizzbuzz = (number) => {
+const fizzbuzz = (number) => {
     if ((number % 3 === 0) && (number % 5 === 0)){
     return 'Fizzbuzz';
     } else if (number % 3 === 0) {
@@ -10,6 +10,8 @@ const Fizzbuzz = (number) => {
     }
 }
 
-for (let number = 1; number < 51; number++) {
-    console.log(`Fizzbuzz result for ${number} is ${Fizzbuzz(number)}`);
-    }
+// for (let number = 1; number < 51; number++) {
+//     console.log(`Fizzbuzz result for ${number} is ${Fizzbuzz(number)}`);
+//     }
+
+module.exports = fizzbuzz;
